@@ -23,10 +23,14 @@ class InteractiveRecord
     column_names.compact
   end
   
+  def self.do_now
     self.column_names.each do |col_name|
       attr_accessor col_name.to_sym
       binding.pry
     end
+  end
+  
+  self.do_now
   
   def initialize(attrs = {})
     attrs.each do |key, value|
