@@ -23,12 +23,12 @@ class InteractiveRecord
     column_names.compact
   end
   
+  puts "Wild"
+  
   self.column_names.each do |col_name|
     attr_accessor col_name.to_sym
     binding.pry
   end
-  
-  binding.pry
   
   def initialize(attrs = {})
     attrs.each do |key, value|
