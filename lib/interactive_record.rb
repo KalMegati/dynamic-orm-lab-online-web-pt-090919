@@ -23,7 +23,7 @@ class InteractiveRecord
     column_names.compact
   end
   
-  def initialize(attrs)
+  def initialize(attrs = nil)
     
   end
   
