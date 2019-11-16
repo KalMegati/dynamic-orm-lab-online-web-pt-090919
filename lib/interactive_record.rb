@@ -60,7 +60,7 @@ class InteractiveRecord
   end
   
   def self.find_by(kv_pair)
-    
+    kv_pair.keys
   end
   
 end
