@@ -44,6 +44,9 @@ class InteractiveRecord
   end
   
   def values_for_insert
+    self.col_names_for_insert.map{ |col_name|
+      self.send("#{col_name}=")
+    }.join(", ")
     
   end
   
