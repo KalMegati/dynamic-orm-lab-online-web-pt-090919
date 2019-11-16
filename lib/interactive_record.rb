@@ -45,7 +45,11 @@ class InteractiveRecord
   
   def values_for_insert
     self.col_names_for_insert.split(", ").map{
-      |col_name| "'#{self.send(col_name)}'"}.join(", ")
+      |col_name| "'#{self.send(col_name)}'"
+    }.join(", ")
+  end
+  
+  def save
     
   end
   
