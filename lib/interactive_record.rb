@@ -15,7 +15,7 @@ def self.column_names
   table_info = DB[:conn].execute(sql)
   column_names = []
  
-  table_info.each do |column, value|
+  table_info.each do |column, value, value|
     column_names << column["name"]
   end
  
