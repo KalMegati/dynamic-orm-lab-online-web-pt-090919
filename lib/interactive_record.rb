@@ -9,7 +9,7 @@ class InteractiveRecord
   end
   
 def self.column_names
-  DB[:conn].results_as_array = true
+  DB[:conn].results_as_array = false
  
   sql = "PRAGMA table_info('#{table_name}')"
  
