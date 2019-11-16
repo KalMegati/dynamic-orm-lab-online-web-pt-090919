@@ -25,7 +25,7 @@ class InteractiveRecord
   
   def initialize(attributes = nil)
     attributes.each do |attrs|
-      self.send
+      self.send()
     end
   end
   
