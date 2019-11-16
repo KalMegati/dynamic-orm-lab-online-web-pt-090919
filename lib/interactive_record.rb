@@ -40,7 +40,7 @@ class InteractiveRecord
   end
   
   def col_names_for_insert
-    self.class.column_names.select {|col| binding.pry col =! "id"}
+    self.class.column_names.select {|col_name| col_name =! "id"}
   end
   
 end
