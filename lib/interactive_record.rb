@@ -55,7 +55,7 @@ class InteractiveRecord
       VALUES (?)
     SQL
     
-    DB[:conn].execute(sql, table_name_for_insert, col_names_for_insert, values_for_insert)
+    DB[:conn].execute(sql, self.table_name_for_insert, self.col_names_for_insert, self.values_for_insert)
   end
   
 end
