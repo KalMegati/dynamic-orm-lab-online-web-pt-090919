@@ -28,6 +28,8 @@ class InteractiveRecord
     binding.pry
   end
   
+  binding.pry
+  
   def initialize(attrs = {})
     attrs.each do |key, value|
       #self.class.attr_accessor key.to_sym
