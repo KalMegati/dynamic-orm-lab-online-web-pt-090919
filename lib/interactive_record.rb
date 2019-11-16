@@ -30,4 +30,6 @@ class InteractiveRecord
     end
   end
   
+  def 
+  
 end
