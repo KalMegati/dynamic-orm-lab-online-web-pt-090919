@@ -23,8 +23,10 @@ class InteractiveRecord
     column_names.compact
   end
   
-  def initialize(attrs = nil)
-    
+  def initialize(attributes = nil)
+    attributes.each do |attrs|
+      
+    end
   end
   
 end
