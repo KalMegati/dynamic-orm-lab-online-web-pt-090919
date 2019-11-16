@@ -39,4 +39,8 @@ class InteractiveRecord
     self.class.to_s.downcase.pluralize
   end
   
+  def col_names_for_insert
+    
+  end
+  
 end
